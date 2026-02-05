@@ -1,55 +1,72 @@
-<!-- index.html (COMPLET) -->
+<!-- index.html (COMPLET) — sections dans l'ordre demandé + commentaires -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+  <!-- Meta -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Titre onglet -->
   <title>Aliya Maatit - Portfolio Cybersécurité & Réseaux</title>
 
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
 
+  <!-- CSS principal -->
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <!-- Navigation -->
+  <!-- =======================
+       NAVIGATION FIXE
+       - Logo à gauche
+       - Ancres vers les sections
+  ======================== -->
   <nav>
     <div class="container">
       <a href="#accueil" class="logo">AM <span>·</span></a>
+
       <ul>
         <li><a href="#accueil">Accueil</a></li>
-        <li><a href="#formation">Formation</a></li>
-        <li><a href="#experience">Expérience</a></li>
         <li><a href="#competences">Compétences</a></li>
         <li><a href="#projets">Projets</a></li>
+        <li><a href="#formation">Formation</a></li>
+        <li><a href="#experience">Expérience</a></li>
         <li><a href="#interets">Intérêts</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- Accueil / Hero -->
+  <!-- =======================
+       1) ACCUEIL / HERO
+       - Présentation
+       - Boutons CTA
+       - Stats rapides
+  ======================== -->
   <section id="accueil" class="hero">
     <div class="hero-content">
+      <!-- Texte principal -->
       <div class="hero-text">
         <h1>Aliya Maatit</h1>
-        <p class="subtitle">
-          Étudiante en cycle Ingénieur Réseaux & Sécurité<br />
-        </p>
+        <p class="subtitle">Étudiante en cycle Ingénieur Réseaux & Sécurité</p>
+
         <p>
           Passionnée par la sécurité informatique et les infrastructures réseau,
           je développe des compétences techniques solides tout en cultivant une approche humaine
           et collaborative des projets IT.
         </p>
 
+        <!-- Call-To-Action -->
         <div class="cta-buttons">
           <a href="#contact" class="btn btn-primary">Me Contacter</a>
           <a href="document/CV_Aliya_Maatit.pdf" class="btn btn-secondary" download>Télécharger mon CV</a>
         </div>
       </div>
 
+      <!-- Cartes stats -->
       <div class="hero-stats">
         <div class="stat">
           <span class="stat-number">1ème année</span>
@@ -67,164 +84,13 @@
     </div>
   </section>
 
-  <!-- Formation -->
-  <section id="formation">
-    <div class="section-header">
-      <h2>Mon Parcours</h2>
-      <p>Formation académique en réseaux et télécommunications</p>
-    </div>
-
-    <div class="timeline">
-      <!-- BUT R&T -->
-      <div class="timeline-item fade-in">
-        <div class="timeline-content">
-          <div class="formation-media">
-            <img src="image/iutvilleta.jpg" alt="IUT de Villetaneuse — Université Sorbonne Paris Nord" />
-          </div>
-
-          <span class="timeline-date">2023 - 2026</span>
-          <h3>BUT Réseaux et Télécommunications</h3>
-          <p><strong>IUT de Villetaneuse - Université Sorbonne Paris Nord</strong></p>
-          <p>Spécialisation en Cybersécurité</p>
-          <p>
-            Compétences transversales : expression professionnelle, anglais technique, droit du numérique (RGPD),
-            gestion de projet, collaboration en équipe.
-          </p>
-        </div>
-        <div class="timeline-dot"></div>
-      </div>
-
-      <!-- Bac -->
-      <div class="timeline-item fade-in">
-        <div class="timeline-content">
-          <div class="formation-media">
-            <img src="image/lyceejeanzay.jpg" alt="Lycée Jean Zay" />
-          </div>
-
-          <span class="timeline-date">2019 - 2022</span>
-          <h3>Baccalauréat Général</h3>
-          <p><strong>Lycée Jean Zay</strong></p>
-          <p>Spécialités : Mathématiques, SES, Anglais Monde Contemporain</p>
-          <p>
-            Section européenne anglais : enseignement renforcé favorisant l'ouverture internationale
-            et la communication interculturelle.
-          </p>
-        </div>
-        <div class="timeline-dot"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Expérience -->
-  <section id="experience">
-    <div class="section-header">
-      <h2>Expériences</h2>
-      <p>Expérience professionnelle et expériences immersives en cybersécurité.</p>
-    </div>
-
-    <div class="experiences-grid">
-      <!-- EXPÉRIENCE PRO : MOMA GROUP -->
-      <article class="experience-card fade-in">
-        <header class="experience-top">
-          <div>
-            <h3>Technicienne Informatique — Support & Cybersécurité</h3>
-            <p class="company">MOMA GROUP · Paris</p>
-          </div>
-          <span class="experience-date">Avril - Juin 2025</span>
-        </header>
-
-        <div class="exp-photo">
-          <img src="image/andia.jpg" alt="MOMA GROUP - support informatique et multi-sites" />
-        </div>
-
-        <div class="experience-content">
-          <div class="exp-grid">
-            <div class="exp-block">
-              <h4>Présentation</h4>
-              <p>
-                Groupe français spécialisé dans la restauration haut de gamme et l’événementiel, en environnement multi-sites.
-                Enjeux : continuité de service, gestion des accès et cybersécurité, dans un contexte de transformation numérique.
-              </p>
-            </div>
-
-            <div class="exp-block">
-              <h4>Missions principales</h4>
-              <ul>
-                <li>Support utilisateurs N1/N2 (sur site & à distance)</li>
-                <li>Gestion du parc & tickets (GLPI)</li>
-                <li>Déploiement MFA Microsoft 365</li>
-                <li>Sensibilisation phishing & bonnes pratiques</li>
-                <li>Interventions ponctuelles sur sites & coordination prestataires</li>
-              </ul>
-            </div>
-
-            <div class="exp-block">
-              <h4>Outils & compétences</h4>
-              <p class="chips">
-                <span class="chip">GLPI</span>
-                <span class="chip">Microsoft 365 Admin</span>
-                <span class="chip">Active Directory</span>
-                <span class="chip">Support IT</span>
-                <span class="chip">Gestion des accès</span>
-                <span class="chip">Cybersécurité</span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <!-- EXPÉRIENCE CYBER : EX MACHINA -->
-      <article class="experience-card fade-in">
-        <header class="experience-top">
-          <div>
-            <h3>Trophée Ex Machina 2026 — Gestion de crise cyber</h3>
-            <p class="company">Université Sorbonne Paris Nord · Orange Cyberdefense</p>
-          </div>
-          <span class="experience-date">2026</span>
-        </header>
-
-        <div class="exp-photo">
-          <img src="image/promo.jpg" alt="Ex Machina - cellule de crise" />
-        </div>
-
-        <div class="experience-content">
-          <div class="exp-grid">
-            <div class="exp-block">
-              <h4>Présentation</h4>
-              <p>
-                Exercice immersif de gestion de crise cyber en milieu hospitalier.
-                Simulation d’un hôpital victime d’une cyberattaque : enjeux techniques, juridiques et organisationnels.
-              </p>
-            </div>
-
-            <div class="exp-block">
-              <h4>Rôle & contributions</h4>
-              <ul>
-                <li>Rôle DSI / RSSI au sein d’une cellule de crise</li>
-                <li>Contention de l’attaque & continuité des activités critiques</li>
-                <li>Décisions techniques et stratégiques sous pression</li>
-                <li>Coordination : juridique, communication, finance, soins</li>
-                <li><strong>Prix de l’anticipation</strong> : prioriser et décider avant aggravation</li>
-              </ul>
-            </div>
-
-            <div class="exp-block">
-              <h4>Compétences mobilisées</h4>
-              <p class="chips">
-                <span class="chip">Gestion de crise</span>
-                <span class="chip">Gouvernance SSI</span>
-                <span class="chip">Décision sous stress</span>
-                <span class="chip">Communication</span>
-                <span class="chip">Leadership</span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <!-- Compétences -->
+  
+  <!-- =======================
+       3) COMPÉTENCES
+       - Cartes cliquables
+       - Chaque carte a un "bandeau" gradient comme les projets
+       - Le href pointe vers le projet associé (#projet-xxx)
+  ======================== -->
   <section id="competences">
     <div class="section-header">
       <h2>Mes compétences</h2>
@@ -328,7 +194,11 @@
     </div>
   </section>
 
-  <!-- Projets -->
+  <!-- =======================
+       4) PROJETS
+       - Chaque projet a un id (#projet-xxx) => utilisé par les compétences
+       - Bandeau gradient en haut des cartes (comme sur ton screenshot)
+  ======================== -->
   <section id="projets">
     <div class="section-header">
       <h2>Mes Projets</h2>
@@ -349,7 +219,6 @@
             Conception et déploiement d’un Wi-Fi multi-sites : SSID Entreprise en WPA2-Enterprise (FreeRADIUS),
             réseau invité isolé, supervision Wazuh, hardening Linux, analyse EBIOS et gestion des comptes RADIUS via PHP/MySQL.
           </p>
-
           <ul>
             <li>Wi-Fi entreprise (WPA2-Enterprise)</li>
             <li>FreeRADIUS + MariaDB</li>
@@ -513,7 +382,174 @@
     </div>
   </section>
 
-  <!-- Centres d'intérêt -->
+  <!-- =======================
+       2) FORMATION
+       - Timeline (alternée desktop)
+       - Images + texte
+  ======================== -->
+  <section id="formation">
+    <div class="section-header">
+      <h2>Mon Parcours</h2>
+      <p>Formation académique en réseaux et télécommunications</p>
+    </div>
+
+    <div class="timeline">
+      <!-- Item 1 -->
+      <div class="timeline-item fade-in">
+        <div class="timeline-content">
+          <div class="formation-media">
+            <img src="image/iutvilleta.jpg" alt="IUT de Villetaneuse — Université Sorbonne Paris Nord" />
+          </div>
+
+          <span class="timeline-date">2023 - 2026</span>
+          <h3>BUT Réseaux et Télécommunications</h3>
+          <p><strong>IUT de Villetaneuse - Université Sorbonne Paris Nord</strong></p>
+          <p>Spécialisation en Cybersécurité</p>
+          <p>
+            Compétences transversales : expression professionnelle, anglais technique, droit du numérique (RGPD),
+            gestion de projet, collaboration en équipe.
+          </p>
+        </div>
+        <div class="timeline-dot"></div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="timeline-item fade-in">
+        <div class="timeline-content">
+          <div class="formation-media">
+            <img src="image/lyceejeanzay.jpg" alt="Lycée Jean Zay" />
+          </div>
+
+          <span class="timeline-date">2019 - 2022</span>
+          <h3>Baccalauréat Général</h3>
+          <p><strong>Lycée Jean Zay</strong></p>
+          <p>Spécialités : Mathématiques, SES, Anglais Monde Contemporain</p>
+          <p>
+            Section européenne anglais : enseignement renforcé favorisant l'ouverture internationale
+            et la communication interculturelle.
+          </p>
+        </div>
+        <div class="timeline-dot"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =======================
+       5) EXPÉRIENCE
+       - 2 grandes cartes : stage + exercice de crise
+       - Bloc "Présentation / Missions / Outils" en colonnes (desktop)
+  ======================== -->
+  <section id="experience">
+    <div class="section-header">
+      <h2>Expériences</h2>
+      <p>Expérience professionnelle et expériences immersives en cybersécurité.</p>
+    </div>
+
+    <div class="experiences-grid">
+      <article class="experience-card fade-in">
+        <header class="experience-top">
+          <div>
+            <h3>Technicienne Informatique — Support & Cybersécurité</h3>
+            <p class="company">MOMA GROUP · Paris</p>
+          </div>
+          <span class="experience-date">Avril - Juin 2025</span>
+        </header>
+
+        <div class="exp-photo">
+          <img src="image/andia.jpg" alt="MOMA GROUP - support informatique et multi-sites" />
+        </div>
+
+        <div class="experience-content">
+          <div class="exp-grid">
+            <div class="exp-block">
+              <h4>Présentation</h4>
+              <p>
+                Groupe français spécialisé dans la restauration haut de gamme et l’événementiel, en environnement multi-sites.
+                Enjeux : continuité de service, gestion des accès et cybersécurité, dans un contexte de transformation numérique.
+              </p>
+            </div>
+
+            <div class="exp-block">
+              <h4>Missions principales</h4>
+              <ul>
+                <li>Support utilisateurs N1/N2 (sur site & à distance)</li>
+                <li>Gestion du parc & tickets (GLPI)</li>
+                <li>Déploiement MFA Microsoft 365</li>
+                <li>Sensibilisation phishing & bonnes pratiques</li>
+                <li>Interventions ponctuelles sur sites & coordination prestataires</li>
+              </ul>
+            </div>
+
+            <div class="exp-block">
+              <h4>Outils & compétences</h4>
+              <p class="chips">
+                <span class="chip">GLPI</span>
+                <span class="chip">Microsoft 365 Admin</span>
+                <span class="chip">Active Directory</span>
+                <span class="chip">Support IT</span>
+                <span class="chip">Gestion des accès</span>
+                <span class="chip">Cybersécurité</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="experience-card fade-in">
+        <header class="experience-top">
+          <div>
+            <h3>Trophée Ex Machina 2026 — Gestion de crise cyber</h3>
+            <p class="company">Université Sorbonne Paris Nord · Orange Cyberdefense</p>
+          </div>
+          <span class="experience-date">2026</span>
+        </header>
+
+        <div class="exp-photo">
+          <img src="image/promo.jpg" alt="Ex Machina - cellule de crise" />
+        </div>
+
+        <div class="experience-content">
+          <div class="exp-grid">
+            <div class="exp-block">
+              <h4>Présentation</h4>
+              <p>
+                Exercice immersif de gestion de crise cyber en milieu hospitalier.
+                Simulation d’un hôpital victime d’une cyberattaque : enjeux techniques, juridiques et organisationnels.
+              </p>
+            </div>
+
+            <div class="exp-block">
+              <h4>Rôle & contributions</h4>
+              <ul>
+                <li>Rôle DSI / RSSI au sein d’une cellule de crise</li>
+                <li>Contention de l’attaque & continuité des activités critiques</li>
+                <li>Décisions techniques et stratégiques sous pression</li>
+                <li>Coordination : juridique, communication, finance, soins</li>
+                <li><strong>Prix de l’anticipation</strong> : prioriser et décider avant aggravation</li>
+              </ul>
+            </div>
+
+            <div class="exp-block">
+              <h4>Compétences mobilisées</h4>
+              <p class="chips">
+                <span class="chip">Gestion de crise</span>
+                <span class="chip">Gouvernance SSI</span>
+                <span class="chip">Décision sous stress</span>
+                <span class="chip">Communication</span>
+                <span class="chip">Leadership</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- =======================
+       6) INTÉRÊTS
+       - Cartes simples (image + texte)
+  ======================== -->
   <section id="interets">
     <div class="section-header">
       <h2>Centres d’intérêt</h2>
@@ -563,7 +599,10 @@
     </div>
   </section>
 
-  <!-- Contact -->
+  <!-- =======================
+       7) CONTACT
+       - Informations + liens sociaux
+  ======================== -->
   <section id="contact">
     <div class="section-header">
       <h2>Me Contacter</h2>
@@ -581,9 +620,16 @@
       </div>
     </div>
 
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/aliya-maatit-a68162297" target="_blank" rel="noreferrer" class="social-link">in</a>
+      <a href="https://github.com/aliyamaatit" target="_blank" rel="noreferrer" class="social-link">gh</a>
+    </div>
   </section>
 
-  <!-- Footer -->
+  <!-- =======================
+       FOOTER
+       - Infos + liens + icônes
+  ======================== -->
   <footer>
     <div class="footer-inner">
       <div class="footer-left">
@@ -593,11 +639,14 @@
       </div>
 
       <div class="footer-social" aria-label="Réseaux sociaux">
+        <!-- SVG LinkedIn -->
         <a href="https://www.linkedin.com/in/aliya-maatit-a68162297" target="_blank" rel="noopener" aria-label="LinkedIn">
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46C23.2 24 24 23.23 24 22.28V1.72C24 .77 23.2 0 22.23 0zM7.09 20.45H3.56V9h3.53v11.45zM5.32 7.43c-1.13 0-2.05-.93-2.05-2.07 0-1.14.92-2.07 2.05-2.07 1.14 0 2.06.93 2.06 2.07 0 1.14-.92 2.07-2.06 2.07zM20.45 20.45h-3.53v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.4V9h3.39v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.59 0 4.25 2.37 4.25 5.46v6.28z"></path>
           </svg>
         </a>
+
+        <!-- SVG GitHub -->
         <a href="https://github.com/aliyamaatit" target="_blank" rel="noopener" aria-label="GitHub">
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.089-.745.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.418-1.305.762-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.47-2.381 1.235-3.221-.123-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.241 2.873.118 3.176.77.84 1.233 1.911 1.233 3.221 0 4.61-2.807 5.625-5.479 5.921.43.372.823 1.102.823 2.222 0 1.606-.015 2.898-.015 3.293 0 .322.216.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12z"></path>
@@ -608,68 +657,93 @@
   </footer>
 
   <script>
-    // Animation au scroll
+    /* =======================
+       1) Apparition des éléments au scroll
+       - Tous les éléments .fade-in passent en .visible quand ils entrent dans le viewport
+    ======================== */
     const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
     }, observerOptions);
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-    // Smooth scroll (ancres)
+    /* =======================
+       2) Smooth scroll sur les liens d’ancre
+       - On ignore volontairement les compétences : elles ont un comportement spécial
+    ======================== */
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
-        // ⚠️ On laisse les compétences gérer leur scroll (highlight)
+        // Les compétences => gérées par le bloc “Compétence -> Projet”
         if (this.classList.contains('competence-card')) return;
 
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          const navHeight = document.querySelector('nav').offsetHeight;
-          const targetPosition = target.offsetTop - navHeight;
-          window.scrollTo({ top: targetPosition, behavior: 'smooth' });
-        }
+        if (!target) return;
+
+        const navHeight = document.querySelector('nav').offsetHeight;
+        const targetPosition = target.offsetTop - navHeight;
+
+        window.scrollTo({ top: targetPosition, behavior: 'smooth' });
       });
     });
 
-    // Active nav
+    /* =======================
+       3) Mettre en surbrillance le lien du menu correspondant à la section visible
+    ======================== */
     window.addEventListener('scroll', () => {
       const sections = document.querySelectorAll('section');
       const navLinks = document.querySelectorAll('nav a:not(.logo)');
       let current = '';
+
       sections.forEach(section => {
         const sectionTop = section.offsetTop;
         if (scrollY >= (sectionTop - 220)) current = section.getAttribute('id');
       });
+
       navLinks.forEach(link => {
         link.classList.toggle('active', link.getAttribute('href') === `#${current}`);
       });
     });
 
-    // ✅ Compétence -> Projet associé (scroll + surbrillance)
+    /* =======================
+       4) Compétence -> Projet associé
+       - Clique sur une compétence
+       - Scroll vers la section projets
+       - Scroll vers le projet ciblé
+       - Ajoute une classe temporaire "highlight-project" (effet visuel)
+    ======================== */
     (function () {
       const nav = document.querySelector('nav');
 
+      // Scroll en tenant compte de la hauteur de la nav fixe
       function scrollToElement(el) {
         const navHeight = nav ? nav.offsetHeight : 0;
         const y = el.getBoundingClientRect().top + window.scrollY - navHeight - 16;
         window.scrollTo({ top: y, behavior: 'smooth' });
       }
 
+      // Surbrillance temporaire du projet ciblé
       function highlightProject(project) {
         project.classList.add('highlight-project');
         setTimeout(() => project.classList.remove('highlight-project'), 2000);
       }
 
+      // Toutes les compétences pointent vers un id projet : href="#projet-xxx"
       document.querySelectorAll('.competence-card[href^="#projet-"]').forEach(card => {
         card.addEventListener('click', (e) => {
           e.preventDefault();
+
           const targetId = card.getAttribute('href');
           const target = document.querySelector(targetId);
           if (!target) return;
 
+          // D’abord, on amène l’utilisateur vers la section Projets
           const projetsSection = document.querySelector('#projets');
           if (projetsSection) scrollToElement(projetsSection);
 
+          // Puis on "focus" le projet précis, et on le met en évidence
           setTimeout(() => {
             scrollToElement(target);
             highlightProject(target);
