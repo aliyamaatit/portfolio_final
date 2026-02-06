@@ -1,1 +1,794 @@
 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <!-- Meta -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Titre onglet -->
+  <title>Aliya Maatit - Portfolio Cybersécurité & Réseaux</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- =======================
+       NAVIGATION FIXE
+  ======================== -->
+  <nav>
+    <div class="container">
+      <a href="#accueil" class="logo">Aliya M <span>·</span></a>
+
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#formation">Formation</a></li>
+        <li><a href="#experience">Expérience</a></li>
+        <li><a href="#interets">Intérêts</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- =======================
+       1) ACCUEIL / HERO
+  ======================== -->
+  <section id="accueil" class="hero">
+    <div class="hero-content">
+      <!-- Texte principal -->
+      <div class="hero-text">
+        <h1>Aliya Maatit</h1>
+        <p class="subtitle">Étudiante en cycle Ingénieur Réseaux & Sécurité</p>
+
+        <p>
+          Passionnée par la sécurité informatique et les infrastructures réseau,
+          je développe des compétences techniques solides tout en cultivant une approche humaine
+          et collaborative des projets IT.
+        </p>
+
+        <!-- Call-To-Action -->
+        <div class="cta-buttons">
+          <a href="#contact" class="btn btn-primary">Me Contacter</a>
+          <a href="document/CV_Aliya_Maatit.pdf" class="btn btn-secondary" download>Télécharger mon CV</a>
+        </div>
+      </div>
+
+      <!-- Cartes stats -->
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number">1ère année</span>
+          <span class="stat-label">Cycle Ingénieur</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">8+</span>
+          <span class="stat-label">Projets Réalisés</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">3</span>
+          <span class="stat-label">Ans d'alternance</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =======================
+       3) COMPÉTENCES
+  ======================== -->
+  <section id="competences">
+    <div class="section-header">
+      <h2>Mes compétences</h2>
+      <p>Cliquez sur une compétence pour voir un projet associé</p>
+    </div>
+
+    <h3 class="skills-subtitle">Compétences techniques</h3>
+
+    <div class="competences-grid">
+      <a href="#projet-sae501" class="competence-card fade-in">
+        <div class="competence-media">
+          <img src="image/admin.jpg" alt="Administration réseaux" />
+        </div>
+        <header class="competence-header">
+          <h3>Administrer les réseaux et l’Internet</h3>
+          <p class="competence-date">BUT R&T — Compétence</p>
+        </header>
+        <div class="competence-body">
+          <p>Configuration et exploitation d’infrastructures réseau sécurisées.</p>
+          <ul>
+            <li>Adressage IP, routage, VLAN</li>
+            <li>Équipements Cisco</li>
+            <li>DHCP, DNS, NAT</li>
+          </ul>
+          <span class="competence-link">→ Voir le projet associé</span>
+        </div>
+      </a>
+
+      <a href="#projet-sae201" class="competence-card fade-in">
+        <div class="competence-media">
+          <img src="image/connecter.jpeg" alt="Connexion entreprise" />
+        </div>
+        <header class="competence-header">
+          <h3>Connecter les entreprises et les usagers</h3>
+          <p class="competence-date">BUT R&T — Compétence</p>
+        </header>
+        <div class="competence-body">
+          <p>Mise en œuvre de solutions de connectivité fiables.</p>
+          <ul>
+            <li>VPN, Wi-Fi entreprise</li>
+            <li>WAN, interconnexion de sites</li>
+          </ul>
+          <span class="competence-link">→ Voir le projet associé</span>
+        </div>
+      </a>
+
+      <a href="#projet-sae204" class="competence-card fade-in">
+        <div class="competence-media">
+          <img src="image/auto.jpg" alt="Automatisation" />
+        </div>
+        <header class="competence-header">
+          <h3>Créer des outils et applications R&T</h3>
+          <p class="competence-date">BUT R&T — Compétence</p>
+        </header>
+        <div class="competence-body">
+          <p>Automatisation et scripts pour l’administration réseau.</p>
+          <ul>
+            <li>Python</li>
+            <li>Scripts réseau</li>
+          </ul>
+          <span class="competence-link">→ Voir le projet associé</span>
+        </div>
+      </a>
+
+      <a href="#projet-sae404" class="competence-card fade-in">
+        <div class="competence-media">
+          <img src="image/vlan.png" alt="Sécurité SI" />
+        </div>
+        <header class="competence-header">
+          <h3>Administrer un SI sécurisé</h3>
+          <p class="competence-date">BUT R&T — Compétence</p>
+        </header>
+        <div class="competence-body">
+          <p>Sécurisation globale des systèmes d’information.</p>
+          <ul>
+            <li>Pare-feu</li>
+            <li>Segmentation VLAN</li>
+            <li>PSSI</li>
+          </ul>
+          <span class="competence-link">→ Voir le projet associé</span>
+        </div>
+      </a>
+
+      <a href="#projet-sae503" class="competence-card fade-in">
+        <div class="competence-media">
+          <img src="image/wazuh.png" alt="Supervision SI" />
+        </div>
+        <header class="competence-header">
+          <h3>Surveiller un système d’information</h3>
+          <p class="competence-date">BUT R&T — Compétence</p>
+        </header>
+        <div class="competence-body">
+          <p>Supervision, détection et analyse d’incidents.</p>
+          <ul>
+            <li>Wazuh</li>
+            <li>Analyse de logs</li>
+          </ul>
+          <span class="competence-link">→ Voir le projet associé</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- =======================
+       4) PROJETS
+  ======================== -->
+  <section id="projets">
+    <div class="section-header">
+      <h2>Mes Projets</h2>
+      <p>Réseaux, cybersécurité, systèmes et développement — classés par ordre chronologique</p>
+    </div>
+
+    <div class="projects-grid">
+      <article id="projet-sae501" class="project-card fade-in">
+        <div class="project-media">
+          <img src="image/sae501.png" alt="Déploiement Wi-Fi d’entreprise sécurisé et supervisé" />
+        </div>
+        <header class="project-header">
+          <h3>Déploiement d’un Wi-Fi d’entreprise sécurisé et supervisé</h3>
+          <p class="project-date">SAE 5.01 — Janv. → Fév.</p>
+        </header>
+        <div class="project-body">
+          <p>
+            Conception et déploiement d’un Wi-Fi multi-sites : SSID Entreprise en WPA2-Enterprise (FreeRADIUS),
+            réseau invité isolé, supervision Wazuh, hardening Linux, analyse EBIOS et gestion des comptes RADIUS via PHP/MySQL.
+          </p>
+          <ul>
+            <li>Wi-Fi entreprise (WPA2-Enterprise)</li>
+            <li>FreeRADIUS + MariaDB</li>
+            <li>Réseau invité isolé</li>
+            <li>Supervision Wazuh + hardening</li>
+            <li>Analyse EBIOS + GitLab</li>
+          </ul>
+
+          <div class="tags">
+            <span class="tag">Wi-Fi</span><span class="tag">FreeRADIUS</span><span class="tag">Wazuh</span><span class="tag">Linux</span>
+          </div>
+
+          <div class="project-actions">
+            <a class="project-btn" href="document/sae501.zip" download>Télécharger le livrable</a>
+          </div>
+        </div>
+      </article>
+
+      <article id="projet-sae503" class="project-card fade-in">
+        <div class="project-media">
+          <img src="image/sae503.png" alt="Sécurisation et supervision avancées d’un SI" />
+        </div>
+        <header class="project-header">
+          <h3>Sécurisation et supervision avancées d’un SI</h3>
+          <p class="project-date">SAE503-CYB — Déc. → Fév.</p>
+        </header>
+        <div class="project-body">
+          <p>
+            Simulation d’attaques réseau (ARP spoofing / MITM), déploiement et exploitation de Wazuh,
+            analyse de vulnérabilités Windows Server & Linux, identification de CVE et remédiations.
+          </p>
+
+          <ul>
+            <li>Attaques réseau & MITM (analyse)</li>
+            <li>SIEM Wazuh : déploiement & configuration</li>
+            <li>Vulnérabilités (CVE) & remédiations</li>
+            <li>Cybersécurité défensive</li>
+          </ul>
+
+          <div class="tags">
+            <span class="tag">Wazuh</span><span class="tag">Vulnérabilités</span><span class="tag">Windows Server</span><span class="tag">Linux</span>
+          </div>
+
+          <div class="project-actions">
+            <a class="project-btn" href="document/SAE503_CR_MAATIT_Aliya_TPB.pdf" download>Télécharger le compte rendu</a>
+          </div>
+        </div>
+      </article>
+
+      <article id="projet-sae404" class="project-card fade-in">
+        <div class="project-media">
+          <img src="image/sae44.png" alt="Sécurisation complète d’une entreprise fictive" />
+        </div>
+        <header class="project-header">
+          <h3>Sécurisation complète d’une entreprise fictive</h3>
+          <p class="project-date">SAE4.04 — Mars/Avril 2025</p>
+        </header>
+        <div class="project-body">
+          <p>
+            Travail sur l’entreprise fictive RecycloTech : PSSI, patch management,
+            durcissement via AppLocker et gestion d’une crise cyber simulée.
+          </p>
+
+          <ul>
+            <li>PSSI complète</li>
+            <li>Procédure de patch management</li>
+            <li>Durcissement AppLocker</li>
+            <li>Gestion de crise : analyse, communication, remédiation</li>
+          </ul>
+
+          <div class="tags">
+            <span class="tag">Cybersécurité</span><span class="tag">PSSI</span><span class="tag">Windows Server</span><span class="tag">Gestion de crise</span>
+          </div>
+
+          <div class="project-actions">
+            <a class="project-btn" href="document/SAE44_Livrable_MAATIT_PONNU_G2 (1).pdf" download>Télécharger le livrable</a>
+          </div>
+        </div>
+      </article>
+
+      <article id="projet-sae204" class="project-card fade-in">
+        <div class="project-media">
+          <img src="image/sae24.png" alt="Simulation attaque MITM et sécurisation réseau" />
+        </div>
+        <header class="project-header">
+          <h3>Simulation d’une attaque MITM et sécurisation réseau</h3>
+          <p class="project-date">SAE2.04 — Juin 2024</p>
+        </header>
+        <div class="project-body">
+          <p>Attaque ARP spoofing puis sécurisation via un script Python pour détecter et bloquer les comportements suspects.</p>
+
+          <ul>
+            <li>Réseau avec routeurs/switchs</li>
+            <li>Détection ARP (Python)</li>
+            <li>Blocage MAC suspectes</li>
+          </ul>
+
+          <div class="tags">
+            <span class="tag">MITM</span><span class="tag">Scapy</span><span class="tag">Python</span>
+          </div>
+
+          <div class="project-actions">
+            <a class="project-btn" href="document/SAE24.pdf" download>Télécharger le compte rendu</a>
+          </div>
+        </div>
+      </article>
+
+      <article id="projet-sae201" class="project-card fade-in">
+        <div class="project-media">
+          <img src="image/sae21.png" alt="Construire un réseau informatique complet" />
+        </div>
+        <header class="project-header">
+          <h3>Construire un réseau informatique complet</h3>
+          <p class="project-date">SAE2.01 — Mai/Juin 2024</p>
+        </header>
+        <div class="project-body">
+          <p>Création d’un réseau : routage statique, OSPF, RIPv2, DHCP et NAT/PAT sur matériel Cisco.</p>
+
+          <ul>
+            <li>Routage statique & dynamique (OSPF / RIPv2)</li>
+            <li>DHCP : attribution IP automatique</li>
+            <li>NAT/PAT : accès Internet</li>
+          </ul>
+
+          <div class="tags">
+            <span class="tag">Cisco IOS</span><span class="tag">Routage</span><span class="tag">NAT/PAT</span><span class="tag">Linux</span>
+          </div>
+
+          <div class="project-actions">
+            <a class="project-btn" href="document/SAE21.pptx" download>Télécharger le compte rendu</a>
+          </div>
+        </div>
+      </article>
+
+      <article id="projet-sae202" class="project-card fade-in">
+        <div class="project-media">
+          <img src="image/sae22.png" alt="Mesure et caractérisation de signaux AM/FM" />
+        </div>
+        <header class="project-header">
+          <h3>Mesure et caractérisation de signaux AM/FM</h3>
+          <p class="project-date">SAE2.02 — Avril/Mai 2024</p>
+        </header>
+        <div class="project-body">
+          <p>Mesures de fréquences, puissances et modulations de signaux analogiques à l’aide d’analyseurs.</p>
+
+          <ul>
+            <li>Analyse AM/FM</li>
+            <li>Oscilloscope & analyseur de spectre</li>
+            <li>Mesures sur talkies-walkies</li>
+          </ul>
+
+          <div class="tags">
+            <span class="tag">Signal</span><span class="tag">AM/FM</span><span class="tag">Analyse spectrale</span>
+          </div>
+
+          <div class="project-actions">
+            <a class="project-btn" href="document/SAE22.pdf" download>Télécharger le compte rendu</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- =======================
+       2) FORMATION
+  ======================== -->
+  <section id="formation">
+    <div class="section-header">
+      <h2>Mon Parcours</h2>
+      <p>Formation académique en réseaux et télécommunications</p>
+    </div>
+
+    <div class="timeline">
+      <!-- Item 1 -->
+      <div class="timeline-item fade-in">
+        <div class="timeline-content">
+          <div class="formation-media">
+            <img src="image/iutvilleta.jpg" alt="IUT de Villetaneuse — Université Sorbonne Paris Nord" />
+          </div>
+
+          <span class="timeline-date">2023 - 2026</span>
+          <h3>BUT Réseaux et Télécommunications</h3>
+          <p><strong>IUT de Villetaneuse - Université Sorbonne Paris Nord</strong></p>
+          <p>Spécialisation en Cybersécurité</p>
+          <p>
+            Compétences transversales : expression professionnelle, anglais technique, droit du numérique (RGPD),
+            gestion de projet, collaboration en équipe.
+          </p>
+        </div>
+        <div class="timeline-dot"></div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="timeline-item fade-in">
+        <div class="timeline-content">
+          <div class="formation-media">
+            <img src="image/lyceejeanzay.jpg" alt="Lycée Jean Zay" />
+          </div>
+
+          <span class="timeline-date">2019 - 2022</span>
+          <h3>Baccalauréat Général</h3>
+          <p><strong>Lycée Jean Zay</strong></p>
+          <p>Spécialités : Mathématiques, SES, Anglais Monde Contemporain</p>
+          <p>
+            Section européenne anglais : enseignement renforcé favorisant l'ouverture internationale
+            et la communication interculturelle.
+          </p>
+        </div>
+        <div class="timeline-dot"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =======================
+       5) EXPÉRIENCE
+  ======================== -->
+  <section id="experience">
+    <div class="section-header">
+      <h2>Expériences</h2>
+      <p>Expérience professionnelle et expériences immersives en cybersécurité.</p>
+    </div>
+
+    <div class="experiences-grid">
+      <article class="experience-card fade-in">
+        <header class="experience-top">
+          <div>
+            <h3>Stagiaire Technicienne Informatique</h3>
+            <p class="company">MOMA GROUP · Paris</p>
+          </div>
+          <span class="experience-date">Avril - Juin 2025</span>
+        </header>
+
+        <div class="exp-photo">
+          <img src="image/andia.jpg" alt="MOMA GROUP - support informatique et multi-sites" />
+        </div>
+
+        <div class="experience-content">
+          <div class="exp-grid">
+            <div class="exp-block">
+              <h4>Présentation</h4>
+              <p>
+                Groupe français spécialisé dans la restauration haut de gamme et l’événementiel, en environnement multi-sites.
+                Enjeux : continuité de service, gestion des accès et cybersécurité, dans un contexte de transformation numérique.
+              </p>
+            </div>
+
+            <div class="exp-block">
+              <h4>Missions principales</h4>
+              <ul>
+                <li>Support utilisateurs N1/N2 (sur site & à distance)</li>
+                <li>Gestion du parc & tickets (GLPI)</li>
+                <li>Déploiement MFA Microsoft 365</li>
+                <li>Sensibilisation phishing & bonnes pratiques</li>
+                <li>Interventions ponctuelles sur sites & coordination prestataires</li>
+              </ul>
+            </div>
+
+            <div class="exp-block">
+              <h4>Outils & compétences</h4>
+              <p class="chips">
+                <span class="chip">GLPI</span>
+                <span class="chip">Microsoft 365 Admin</span>
+                <span class="chip">Active Directory</span>
+                <span class="chip">Support IT</span>
+                <span class="chip">Gestion des accès</span>
+                <span class="chip">Cybersécurité</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="experience-card fade-in">
+        <header class="experience-top">
+          <div>
+            <h3>Trophée Ex Machina 2026 — Gestion de crise cyber</h3>
+            <p class="company">Université Sorbonne Paris Nord · Orange Cyberdefense</p>
+          </div>
+          <span class="experience-date">2026</span>
+        </header>
+
+        <div class="exp-photo">
+          <img src="image/promo.jpg" alt="Ex Machina - cellule de crise" />
+        </div>
+
+        <div class="experience-content">
+          <div class="exp-grid">
+            <div class="exp-block">
+              <h4>Présentation</h4>
+              <p>
+                Exercice immersif de gestion de crise cyber en milieu hospitalier.
+                Simulation d’un hôpital victime d’une cyberattaque : enjeux techniques, juridiques et organisationnels.
+              </p>
+            </div>
+
+            <div class="exp-block">
+              <h4>Rôle & contributions</h4>
+              <ul>
+                <li>Rôle DSI / RSSI au sein d’une cellule de crise</li>
+                <li>Contention de l’attaque & continuité des activités critiques</li>
+                <li>Décisions techniques et stratégiques sous pression</li>
+                <li>Coordination : juridique, communication, finance, soins</li>
+                <li><strong>Prix de l’anticipation</strong> : prioriser et décider avant aggravation</li>
+              </ul>
+            </div>
+
+            <div class="exp-block">
+              <h4>Compétences mobilisées</h4>
+              <p class="chips">
+                <span class="chip">Gestion de crise</span>
+                <span class="chip">Gouvernance SSI</span>
+                <span class="chip">Décision sous stress</span>
+                <span class="chip">Communication</span>
+                <span class="chip">Leadership</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- =======================
+       6) INTÉRÊTS
+  ======================== -->
+  <section id="interets">
+    <div class="section-header">
+      <h2>Centres d’intérêt</h2>
+      <p>Ce que je fais pendant mon temps libre</p>
+    </div>
+
+    <div class="interets-grid">
+      <article class="interet-card fade-in">
+        <div class="interet-photo">
+          <img src="image/hack2.jpg" alt="Informatique et technologies" />
+        </div>
+        <div class="interet-content">
+          <h3>Informatique & technologies</h3>
+          <p>
+            Curieuse et passionnée par l’informatique, j’aime comprendre le fonctionnement
+            des systèmes, explorer les réseaux, la cybersécurité et tester de nouvelles technologies.
+          </p>
+        </div>
+      </article>
+
+      <article class="interet-card fade-in">
+        <div class="interet-photo">
+          <img src="image/asso.jpg" alt="Engagement associatif" />
+        </div>
+        <div class="interet-content">
+          <h3>Bénévolat & engagement</h3>
+          <p>
+            Engagement associatif au sein de La Chaîne Fratern’elles :
+            maraudes, distributions alimentaires et actions solidaires.
+            Ces expériences ont renforcé mon sens de l’écoute et du collectif.
+          </p>
+        </div>
+      </article>
+
+      <article class="interet-card fade-in">
+        <div class="interet-photo">
+          <img src="image/livre.jpg" alt="Lecture" />
+        </div>
+        <div class="interet-content">
+          <h3>Lecture</h3>
+          <p>
+            Lecture de romans psychologiques, thrillers et science-fiction.
+            Dernière lecture marquante : <em>L'Adversaire</em> d'Emmanuel Carrère.
+          </p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- =======================
+       7) CONTACT
+       Objectif : colonne infos à gauche + formulaire à droite
+  ======================== -->
+  <section id="contact">
+    <div class="section-header">
+      <h2>Me contacter</h2>
+      <p>Pour une opportunité de stage, d’alternance ou une collaboration — je réponds rapidement.</p>
+    </div>
+
+    <div class="contact-layout fade-in">
+      <!-- COLONNE GAUCHE : INFOS -->
+      <div class="contact-infos">
+        <h3>Coordonnées</h3>
+
+        <ul class="contact-list">
+          <li>
+            <span class="contact-label">Email</span>
+            <a href="mailto:aliya.maatit@outlook.com">aliya.maatit@outlook.com</a>
+          </li>
+          <li>
+            <span class="contact-label">Localisation</span>
+            <span>Île-de-France</span>
+          </li>
+        </ul>
+
+        <!-- Réseaux sociaux (icônes adaptées au bloc Contact, PAS celles du footer) -->
+        <div class="contact-social" aria-label="Réseaux sociaux">
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/aliya-maatit-a68162297" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46C23.2 24 24 23.23 24 22.28V1.72C24 .77 23.2 0 22.23 0zM7.09 20.45H3.56V9h3.53v11.45zM5.32 7.43c-1.13 0-2.05-.93-2.05-2.07 0-1.14.92-2.07 2.05-2.07 1.14 0 2.06.93 2.06 2.07 0 1.14-.92 2.07-2.06 2.07zM20.45 20.45h-3.53v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.4V9h3.39v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.59 0 4.25 2.37 4.25 5.46v6.28z"></path>
+            </svg>
+          </a>
+
+          <!-- GitHub -->
+          <a href="https://github.com/aliyamaatit" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.089-.745.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.418-1.305.762-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.47-2.381 1.235-3.221-.123-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.241 2.873.118 3.176.77.84 1.233 1.911 1.233 3.221 0 4.61-2.807 5.625-5.479 5.921.43.372.823 1.102.823 2.222 0 1.606-.015 2.898-.015 3.293 0 .322.216.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12z"></path>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Liens légaux (toujours dans le bloc Contact) -->
+        <div class="contact-legal">
+          <a href="mentions-legales.html">Mentions légales</a>
+          <a href="rgpd.html">Politique de confidentialité (RGPD)</a>
+        </div>
+      </div>
+
+      <!-- COLONNE DROITE : FORMULAIRE -->
+      <div class="contact-form-wrap">
+        <h3>Envoyer un message</h3>
+
+        <form
+          class="contact-form"
+          action="mailto:aliya.maatit@outlook.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <div class="form-grid">
+            <div class="field">
+              <label for="nom">Nom</label>
+              <input id="nom" name="Nom" type="text" autocomplete="name" placeholder="Votre nom" required />
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="Email" type="email" autocomplete="email" placeholder="votre@email.com" required />
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="sujet">Sujet</label>
+            <input id="sujet" name="Sujet" type="text" placeholder="Ex : Opportunité d’alternance" required />
+          </div>
+
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="Message" rows="6" placeholder="Votre message..." required></textarea>
+          </div>
+
+          <!-- Consentement RGPD (obligatoire) -->
+          <div class="field field-checkbox">
+            <input type="checkbox" id="rgpd" name="Consentement_RGPD" required />
+            <label for="rgpd">
+              J’accepte la <a href="rgpd.html" target="_blank" rel="noopener">politique de confidentialité</a>
+              et les <a href="mentions-legales.html" target="_blank" rel="noopener">mentions légales</a>.
+            </label>
+          </div>
+
+          <button type="submit" class="contact-submit">Envoyer</button>
+
+          <p class="contact-note">
+            (L’envoi ouvre votre application mail avec le message pré-rempli.)
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- =======================
+       FOOTER (icônes + liens)
+  ======================== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-left">
+        <p>&copy; 2026 Aliya Maatit | Étudiante en cycle Ingénieur Réseaux &amp; Sécurité</p>
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="rgpd.html">Politique de confidentialité (RGPD)</a>
+      </div>
+
+      <!-- Ici on garde .footer-social : taille OK pour le footer -->
+      <div class="footer-social" aria-label="Réseaux sociaux">
+        <a href="https://www.linkedin.com/in/aliya-maatit-a68162297" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46C23.2 24 24 23.23 24 22.28V1.72C24 .77 23.2 0 22.23 0zM7.09 20.45H3.56V9h3.53v11.45zM5.32 7.43c-1.13 0-2.05-.93-2.05-2.07 0-1.14.92-2.07 2.05-2.07 1.14 0 2.06.93 2.06 2.07 0 1.14-.92 2.07-2.06 2.07zM20.45 20.45h-3.53v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.4V9h3.39v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.59 0 4.25 2.37 4.25 5.46v6.28z"></path>
+          </svg>
+        </a>
+
+        <a href="https://github.com/aliyamaatit" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.089-.745.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.418-1.305.762-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.47-2.381 1.235-3.221-.123-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.241 2.873.118 3.176.77.84 1.233 1.911 1.233 3.221 0 4.61-2.807 5.625-5.479 5.921.43.372.823 1.102.823 2.222 0 1.606-.015 2.898-.015 3.293 0 .322.216.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12z"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =======================
+       JS (inchangé)
+  ======================== -->
+  <script>
+    /* 1) Apparition des éléments au scroll */
+    const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, observerOptions);
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    /* 2) Smooth scroll sur les ancres */
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        if (this.classList.contains('competence-card')) return;
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (!target) return;
+
+        const navHeight = document.querySelector('nav').offsetHeight;
+        const targetPosition = target.offsetTop - navHeight;
+        window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+      });
+    });
+
+    /* 3) Lien actif dans la navbar */
+    window.addEventListener('scroll', () => {
+      const sections = document.querySelectorAll('section');
+      const navLinks = document.querySelectorAll('nav a:not(.logo)');
+      let current = '';
+
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        if (scrollY >= (sectionTop - 220)) current = section.getAttribute('id');
+      });
+
+      navLinks.forEach(link => {
+        link.classList.toggle('active', link.getAttribute('href') === `#${current}`);
+      });
+    });
+
+    /* 4) Compétence -> Projet associé */
+    (function () {
+      const nav = document.querySelector('nav');
+
+      function scrollToElement(el) {
+        const navHeight = nav ? nav.offsetHeight : 0;
+        const y = el.getBoundingClientRect().top + window.scrollY - navHeight - 16;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      }
+
+      function highlightProject(project) {
+        project.classList.add('highlight-project');
+        setTimeout(() => project.classList.remove('highlight-project'), 2000);
+      }
+
+      document.querySelectorAll('.competence-card[href^="#projet-"]').forEach(card => {
+        card.addEventListener('click', (e) => {
+          e.preventDefault();
+
+          const targetId = card.getAttribute('href');
+          const target = document.querySelector(targetId);
+          if (!target) return;
+
+          const projetsSection = document.querySelector('#projets');
+          if (projetsSection) scrollToElement(projetsSection);
+
+          setTimeout(() => {
+            scrollToElement(target);
+            highlightProject(target);
+          }, 350);
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
+
