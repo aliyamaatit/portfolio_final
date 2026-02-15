@@ -383,6 +383,12 @@ section{
   border-right: none;
 }
 
+#softskills .section-header{
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .human-grid{
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -401,7 +407,7 @@ section{
 }
 
 .human-card:hover{
-  transform: translateY(-6px);
+  transform: translateY(-8px);
   box-shadow: var(--shadow-lg);
   border-color: rgba(182,156,255,0.22);
 }
@@ -421,6 +427,7 @@ section{
   opacity: 0.92;
   transform: scale(1.02);
   transition: transform .35s ease, opacity .35s ease;
+  filter: saturate(1.05) contrast(1.05);
 }
 
 .human-card:hover .human-media img{
@@ -479,12 +486,6 @@ section{
   color: var(--secondary);
   font-weight: 900;
 }
-
-/* Responsive */
-@media (max-width: 1024px){
-  .human-grid{ grid-template-columns: 1fr; }
-}
-
 
 /* =========================
    PROJETS
@@ -694,7 +695,7 @@ section{
   transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
 }
 .experience-card:hover{
-  transform: translateY(-6px);
+  transform: translateY(-8px);
   box-shadow: var(--shadow-lg);
   border-color: rgba(182,156,255,0.22);
 }
@@ -796,7 +797,7 @@ section{
   border: 1px solid rgba(255,255,255,0.10);
 }
 .interet-card:hover{
-  transform: translateY(-6px);
+  transform: translateY(-8px);
   box-shadow: var(--shadow-lg);
   border-color: rgba(78,163,255,0.22);
 }
@@ -1113,6 +1114,8 @@ footer{
   .competences-grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 1024px){
+  .human-grid{ grid-template-columns: 1fr; }
+
   .hero-text h1{ font-size: 3rem; }
 
   .timeline::before{ left: 0; transform:none; }
