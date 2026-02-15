@@ -372,6 +372,120 @@ section{
 .competence-body li::before{ content:'✓'; position:absolute; left:0; color: var(--secondary); font-weight: 900; }
 .competence-link{ margin-top:auto; font-weight: 900; color: var(--secondary); }
 
+
+/* =========================
+   COMPÉTENCES HUMAINES & LINGUISTIQUES
+========================= */
+#softskills{
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-left: none;
+  border-right: none;
+}
+
+.human-grid{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.6rem;
+}
+
+.human-card{
+  background: rgba(255,255,255,0.04);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(255,255,255,0.10);
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.human-card:hover{
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(182,156,255,0.22);
+}
+
+.human-media{
+  width: 100%;
+  height: 170px;
+  overflow: hidden;
+  background: rgba(0,0,0,0.18);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.human-media img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.92;
+  transform: scale(1.02);
+  transition: transform .35s ease, opacity .35s ease;
+}
+
+.human-card:hover .human-media img{
+  transform: scale(1.06);
+  opacity: 0.98;
+}
+
+.human-header{
+  background: linear-gradient(135deg, rgba(78,163,255,0.85), rgba(182,156,255,0.78), rgba(255,182,217,0.45));
+  color: white;
+  padding: 1.35rem 1.5rem;
+}
+
+.human-header h3{
+  font-size: 1.22rem;
+  margin-bottom: .45rem;
+  color: white;
+}
+
+.human-date{
+  font-size: 0.88rem;
+  opacity: 0.95;
+  font-weight: 700;
+}
+
+.human-body{
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.human-body p{
+  color: var(--text-light);
+  margin-bottom: 1.1rem;
+  line-height: 1.75;
+  font-size: 0.95rem;
+}
+
+.human-body ul{
+  list-style: none;
+  margin: 0;
+}
+
+.human-body li{
+  padding: .42rem 0 .42rem 1.4rem;
+  color: rgba(234,241,255,0.92);
+  position: relative;
+  font-size: 0.92rem;
+}
+
+.human-body li::before{
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--secondary);
+  font-weight: 900;
+}
+
+/* Responsive */
+@media (max-width: 1024px){
+  .human-grid{ grid-template-columns: 1fr; }
+}
+
+
 /* =========================
    PROJETS
 ========================= */
@@ -1130,5 +1244,6 @@ body.legal-page{
   .legal-section{ padding: 1.2rem 1.3rem; }
   .legal-actions{ padding: 1.2rem 1.3rem 1.4rem; }
 }
+
 
 
