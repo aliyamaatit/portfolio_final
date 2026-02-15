@@ -29,7 +29,6 @@
       <ul>
         <li><a href="#accueil">Accueil</a></li>
         <li><a href="#competences">Compétences</a></li>
-                <li><a href="#softskills">Humain & langues</a></li>
 <li><a href="#projets">Projets</a></li>
         <li><a href="#formation">Formation</a></li>
         <li><a href="#experience">Expérience</a></li>
@@ -89,7 +88,7 @@
       <p>Cliquez sur une compétence pour voir un projet associé</p>
     </div>
 
-    <h3 class="skills-subtitle">Compétences techniques</h3>
+    <h3 id="competences-tech" class="skills-subtitle">Compétences techniques</h3>
 
     <div class="competences-grid">
       <a href="#projet-sae501" class="competence-card fade-in">
@@ -190,7 +189,7 @@
     <!-- =======================
        COMPÉTENCES HUMAINES & LINGUISTIQUES
   ======================== -->
-  <section id="softskills">
+  <section id="competences-humaines">
     <div class="section-header">
       <h2>Compétences humaines et linguistiques</h2>
       <p>Communication, collaboration et aisance en contexte académique / professionnel.</p>
@@ -771,7 +770,12 @@
     </div>
   </footer>
 
-  <!-- =======================
+    <!-- Bouton retour en haut -->
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Revenir en haut">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5l-7 7 1.4 1.4L11 8.8V20h2V8.8l4.6 4.6L19 12z"/></svg>
+  </button>
+
+<!-- =======================
        JS (inchangé)
   ======================== -->
   <script>
@@ -847,6 +851,24 @@
         });
       });
     })();
+
+    /* 5) Bouton retour en haut */
+    (function () {
+      const btn = document.getElementById("backToTop");
+      if (!btn) return;
+
+      const toggleBtn = () => {
+        btn.classList.toggle("is-visible", window.scrollY > 500);
+      };
+
+      toggleBtn();
+      window.addEventListener("scroll", toggleBtn, { passive: true });
+
+      btn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    })();
+
   </script>
 </body>
 </html>
